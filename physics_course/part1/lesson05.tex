@@ -1,0 +1,190 @@
+\documentclass[12pt]{article}
+\usepackage[UTF8]{inputenc}
+\usepackage{thaisupp}
+\usepackage{enumerate}
+\usepackage{etoolbox}
+\AtBeginEnvironment{enumerate}{\itshape}
+\begin{document}
+\title{การเคลื่อนที่แบบโปรเจกไทล์}
+\maketitle
+\section*{คำถาม in class}
+\begin{enumerate}
+\def\labelenumi{\arabic*.}
+\normalfont
+\item \textbf{วัตถุถูกขว้างออกไปในแนวราบด้วยความเร็ว 20 m/s จากหน้าผาสูง 80 m ถามว่าความเร็วในแนวดิ่งเมื่อถึงพื้นเป็นเท่าใด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 20 m/s
+\item 30 m/s
+\item 40 m/s
+\item 50 m/s
+\end{enumerate}
+\item \textbf{ขว้างวัตถุในแนวราบด้วยความเร็ว 15 m/s จากหน้าผาสูง 45 m วัตถุตกถึงพื้นที่ระยะทางแนวราบเท่าใด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 30 m
+\item 45 m
+\item 60 m
+\item 75 m
+\end{enumerate}
+\item \textbf{ยิงวัตถุขึ้นไปในแนวมุม 60° กับแนวราบด้วยความเร็ว 40 m/s วัตถุใช้เวลาขึ้น-ลงทั้งหมดเท่าใด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 2 s
+\item 4 s
+\item 6 s
+\item 8 s
+\end{enumerate}
+\item \textbf{การเคลื่อนที่แบบโปรเจกไทล์ วิถีการเคลื่อนที่ (trajectory) มีรูปร่างเป็นอะไร}
+\begin{enumerate}[label=\alph*)]
+\item เส้นตรง
+\item วงกลม
+\item พาราโบลา
+\item วงรี
+\end{enumerate}
+\item \textbf{ในการเคลื่อนที่แบบโปรเจกไทล์ ข้อใดต่อไปนี้ถูกต้อง}
+\begin{enumerate}[label=\alph*)]
+\item ความเร็วในแนวราบเปลี่ยนแปลงตลอดเวลา
+\item ความเร็วในแนวดิ่งเปลี่ยนแปลงตลอดเวลา
+\item ความเร็วในแนวราบและแนวดิ่งเปลี่ยนแปลงเท่ากัน
+\item ความเร็วในแนวดิ่งคงที่
+\end{enumerate}
+\item \textbf{ยิงวัตถุขึ้นไปในแนวมุม 30° กับแนวราบด้วยความเร็ว 60 m/s ความสูงสูงสุดที่วัตถุจะไปถึงเท่ากับ (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 45 m
+\item 90 m
+\item 135 m
+\item 180 m
+\end{enumerate}
+\item \textbf{ยิงวัตถุในแนวมุม 45° กับแนวราบด้วยความเร็ว 40 m/s ระยะไกลสุดในแนวราบเท่ากับ (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 80 m
+\item 120 m
+\item 160 m
+\item 200 m
+\end{enumerate}
+\item \textbf{วัตถุถูกขว้างในแนวมุม 37° กับแนวราบด้วยความเร็ว 50 m/s ขนาดของความเร็วลัพธ์เมื่อวัตถุอยู่ที่จุดสูงสุดเท่ากับ (g = 10 m/s², sin 37° = 0.6, cos 37° = 0.8)}
+\begin{enumerate}[label=\alph*)]
+\item 30 m/s
+\item 40 m/s
+\item 50 m/s
+\item 60 m/s
+\end{enumerate}
+\item \textbf{ขว้างวัตถุจากหน้าผาสูง 180 m ขึ้นไปในแนวมุม 30° กับแนวราบ วัตถุใช้เวลากี่วินาทีกว่าจะตกถึงพื้น (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 6 s
+\item 8 s
+\item 10 s
+\item 12 s
+\end{enumerate}
+\item \textbf{ถ้าต้องการยิงวัตถุให้ได้ระยะไกลสุดในแนวราบบนพื้นราบ ควรยิงที่มุมเท่าใด (ไม่คิดแรงต้านอากาศ)}
+\begin{enumerate}[label=\alph*)]
+\item 30°
+\item 45°
+\item 60°
+\item 90°
+\end{enumerate}
+\item \textbf{เครื่องบินบินในแนวราบด้วยความเร็ว 200 m/s ที่ความสูง 500 m ปล่อยลูกน้ำหนักลงพื้น ลูกน้ำหนักจะตกห่างจากจุดปล่อยกี่เมตร (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 1,000 m
+\item 1,414 m
+\item 2,000 m
+\item 2,828 m
+\end{enumerate}
+\item \textbf{ในการเคลื่อนที่แบบโปรเจกไทล์ ถ้าไม่คิดแรงต้านอากาศ ข้อใดต่อไปนี้ถูกต้องเกี่ยวกับการเคลื่อนที่ในแนวราบ}
+\begin{enumerate}[label=\alph*)]
+\item เป็นการเคลื่อนที่ด้วยความเร่งคงที่
+\item เป็นการเคลื่อนที่ด้วยความเร็วคงที่
+\item เป็นการเคลื่อนที่ด้วยความเร่งเปลี่ยนแปลง
+\item วัตถุหยุดนิ่งในแนวราบ
+\end{enumerate}
+\item \textbf{ยิงลูกบอลขึ้นไปในแนวมุม 53° กับแนวราบด้วยความเร็ว 50 m/s (sin 53° = 0.8, cos 53° = 0.6) ความสูงสูงสุดเท่ากับ (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 40 m
+\item 60 m
+\item 80 m
+\item 100 m
+\end{enumerate}
+\item \textbf{ยิงวัตถุที่มุม 30° กับแนวราบด้วยความเร็ว 30 m/s จากหน้าผาสูง 20 m (วัตถุตกต่ำกว่าจุดยิง 20 m) ระยะไกลสุดในแนวราบเท่ากับ (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 26 m
+\item 52 m
+\item 78 m
+\item 104 m
+\end{enumerate}
+\item \textbf{ยิงวัตถุด้วยความเร็วคงที่ v₀ ที่มุม θ และ (90° - θ) สองมุมนี้ให้ระยะไกลเท่ากันเมื่อ}
+\begin{enumerate}[label=\alph*)]
+\item θ = 30°
+\item θ = 45°
+\item θ = 60°
+\item θ = 75°
+\end{enumerate}
+\item \textbf{ขว้างวัตถุในแนวมุม 45° กับแนวราบด้วยความเร็ว 20√2 m/s วัตถุมีขนาดความเร็วเมื่อถึงพื้นเท่ากับ (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 10 m/s
+\item 20 m/s
+\item 30 m/s
+\item 40 m/s
+\end{enumerate}
+\item \textbf{ในการเคลื่อนที่แบบโปรเจกไทล์ ณ ตำแหน่งสูงสุดของวิถี ความเร็วของวัตถุมีค่าเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 0 m/s
+\item เท่ากับความเร็วเริ่มต้น
+\item เท่ากับความเร็วในแนวราบเท่านั้น
+\item เท่ากับความเร็วในแนวดิ่งเท่านั้น
+\end{enumerate}
+\item \textbf{ในการเคลื่อนที่แบบโปรเจกไทล์ ความเร่งของวัตถุมีค่าเท่าใด (ไม่คิดแรงต้านอากาศ)}
+\begin{enumerate}[label=\alph*)]
+\item 0 m/s²
+\item 9.8 m/s² ในแนวราบ
+\item 9.8 m/s² ในแนวดิ่ง
+\item 9.8 m/s² ในทุกทิศทาง
+\end{enumerate}
+\item \textbf{นักกีฬาขว้างจักรยานอนในแนวมุม 45° ได้ระยะไกล 80 m ถ้าต้องการให้ได้ระยะไกล 100 m โดยยิงที่มุมเดิม ต้องเพิ่มความเร็วเริ่มต้นกี่เท่า}
+\begin{enumerate}[label=\alph*)]
+\item 1.00 เท่า
+\item 1.25 เท่า
+\item 1.50 เท่า
+\item 1.75 เท่า
+\end{enumerate}
+\item \textbf{ยิงวัตถุในแนวมุม 53° ด้วยความเร็ว 50 m/s จากหน้าผาสูง 80 m (sin 53° = 0.8, cos 53° = 0.6) วัตถุอยู่สูงจากหน้าผากี่เมตรเมื่อถึงจุดสูงสุด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 45 m
+\item 80 m
+\item 100 m
+\item 125 m
+\end{enumerate}
+\item \textbf{วัตถุถูกปล่อยจากที่สูง h พร้อมกับวัตถุถูกขว้างในแนวราบจากที่สูงเดียวกัน วัตถุใดจะถึงพื้นก่อน (ไม่คิดแรงต้านอากาศ)}
+\begin{enumerate}[label=\alph*)]
+\item วัตถุที่ถูกปล่อย
+\item วัตถุที่ถูกขว้าง
+\item ถึงพื้นพร้อมกัน
+\item ขึ้นกับมวลของวัตถุ
+\end{enumerate}
+\item \textbf{ยิงวัตถุในแนวมุม 60° กับแนวราบด้วยความเร็ว 40 m/s ความเร็วของวัตถุเมื่อผ่านจุดที่อยู่สูงจากพื้นเท่ากับจุดเริ่มต้น (กลับมาที่ระดับเดิม) มีค่าเท่าใด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 20 m/s
+\item 30 m/s
+\item 40 m/s
+\item 50 m/s
+\end{enumerate}
+\item \textbf{ขว้างวัตถุจากหน้าผาสูง 80 m ในแนวมุม 37° กับแนวราบ (sin 37° = 0.6, cos 37° = 0.8) วัตถุตกห่างจากฐานหน้าผา 120 m ความเร็วเริ่มต้นเป็นเท่าใด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 20 m/s
+\item 25 m/s
+\item 30 m/s
+\item 35 m/s
+\end{enumerate}
+\item \textbf{เครื่องบินทิ้งระเบิดบินขนานพื้นราบที่ความสูง 2,000 m ด้วยความเร็ว 360 km/hr ระยะห่างแนวราบจากเป้าที่ต้องทิ้งระเบิดเป็นเท่าใด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 400 m
+\item 600 m
+\item 800 m
+\item 1,000 m
+\end{enumerate}
+\item \textbf{ยิงวัตถุในแนวมุม 30° กับแนวราบจากหน้าผาสูง 100 m วัตถุตกถึงพื้นที่ระยะ 173 m จากฐานหน้าผา ความเร็วเริ่มต้นเป็นเท่าใด (g = 10 m/s², √3 ≈ 1.732)}
+\begin{enumerate}[label=\alph*)]
+\item 10 m/s
+\item 20 m/s
+\item 30 m/s
+\item 40 m/s
+\end{enumerate}
+\end{enumerate}
+\end{document}

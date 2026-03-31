@@ -1,0 +1,225 @@
+\documentclass[12pt]{article}
+\usepackage[UTF8]{inputenc}
+\usepackage{thaisupp}
+\usepackage{enumerate}
+\usepackage{etoolbox}
+\AtBeginEnvironment{enumerate}{\itshape}
+\begin{document}
+\title{การเคลื่อนที่แบบวงกลม (เพิ่มเติม)}
+\maketitle
+\section*{คำถาม in class}
+\begin{enumerate}
+\def\labelenumi{\arabic*.}
+\normalfont
+\item \textbf{วัตถุมวล 3 kg เคลื่อนที่เป็นวงกลมรัศมี 0.6 m ด้วยความเร็ว 5 m/s แรงสู่ศูนย์กลางเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 75 N
+\item 100 N
+\item 125 N
+\item 150 N
+\end{enumerate}
+\item \textbf{ล้อเส้นผ่านศูนย์กลาง 1 m หมุนครบ 1 รอบใน 4 วินาที ความเร็วเชิงมุมเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 0.25π rad/s
+\item 0.5π rad/s
+\item π rad/s
+\item 2π rad/s
+\end{enumerate}
+\item \textbf{เครื่องซักผ้าหมุน 1,200 รอบต่อนาที คาบของการหมุนเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 0.05 s
+\item 0.5 s
+\item 1.2 s
+\item 20 s
+\end{enumerate}
+\item \textbf{วัตถุเคลื่อนที่เป็นวงกลมด้วยความเร็วเชิงมุม 10π rad/s ความถี่เป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 2.5 Hz
+\item 5 Hz
+\item 10 Hz
+\item 20 Hz
+\end{enumerate}
+\item \textbf{วัตถุมวล 2 kg ผูกเชือกยาว 1 m หมุนเป็นวงกลมในระนาบราบด้วยความเร็ว 7 m/s แรงตึงเชือกเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 49 N
+\item 98 N
+\item 196 N
+\item 392 N
+\end{enumerate}
+\item \textbf{อนุภาคมวล 0.05 kg เคลื่อนที่เป็นวงกลมรัศมี 0.8 m ด้วยความเร็ว 12 m/s แรงสู่ศูนย์กลางเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 4.5 N
+\item 9 N
+\item 18 N
+\item 36 N
+\end{enumerate}
+\item \textbf{จานหมุนรัศมี 0.2 m ขอบจานมีความเร็ว 8 m/s ความเร็วเชิงมุมเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 16 rad/s
+\item 40 rad/s
+\item 80 rad/s
+\item 160 rad/s
+\end{enumerate}
+\item \textbf{พัดลมติดเพดานหมุนได้ 72 รอบต่อนาที ความถี่และคาบเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 1.2 Hz, 0.83 s
+\item 1.2 Hz, 0.83 s
+\item 2.4 Hz, 0.42 s
+\item 0.6 Hz, 1.67 s
+\end{enumerate}
+\item \textbf{วัตถุมวล 1 kg ผูกเชือกยาว 0.5 m หมุนเป็นวงกลมในระนาบดิ่งที่จุดต่ำสุดด้วยความเร็ว 8 m/s แรงตึงเชือกเป็นเท่าใด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 108 N
+\item 118 N
+\item 128 N
+\item 138 N
+\end{enumerate}
+\item \textbf{รถยนต์มวล 1,500 kg เข้าโค้งรัศมี 150 m ด้วยความเร็ว 54 km/hr ต้องการแรงเสียดทานขั้นต่ำเท่าใด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 1,500 N
+\item 2,250 N
+\item 3,000 N
+\item 3,750 N
+\end{enumerate}
+\item \textbf{ดาวเทียมโคจรรอบโลกที่ความสูงเท่ากับรัศมีโลก (r = 2R) ถ้าคาบของดาวเทียมใกล้พื้นผิวโลกคือ 84 นาที คาบของดาวเทียมนี้คือเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 168 นาที
+\item 237 นาที
+\item 336 นาที
+\item 672 นาที
+\end{enumerate}
+\item \textbf{วัตถุมวล 2 kg ผูกเชือกยาว 1 m หมุนเป็นวงกลมในระนาบดิ่ง ที่จุดสูงสุดแรงตึงเชือก = 0 ความเร็วที่จุดสูงสุดเป็นเท่าใด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 2.5 m/s
+\item 5.0 m/s
+\item 7.1 m/s
+\item 10.0 m/s
+\end{enumerate}
+\item \textbf{วัตถุมวล 0.5 kg เคลื่อนที่เป็นวงกลมรัศมี 0.4 m ด้วยความเร็วเชิงมุม 8 rad/s แรงสู่ศูนย์กลางเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 6.4 N
+\item 12.8 N
+\item 25.6 N
+\item 51.2 N
+\end{enumerate}
+\item \textbf{วัตถุมวล 4 kg ผูกเชือกยาว 2 m หมุนเป็นวงกลมในระนาบราบด้วยความเร็ว 10 m/s ต้องการแรงตึงเชือกเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 100 N
+\item 200 N
+\item 400 N
+\item 800 N
+\end{enumerate}
+\item \textbf{ล้อรัศมี 0.25 m หมุนด้วยความเร็ว 600 รอบต่อนาที ความเร็วเชิงมุมเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 10π rad/s
+\item 20π rad/s
+\item 30π rad/s
+\item 40π rad/s
+\end{enumerate}
+\item \textbf{รถไฟมวล 20,000 kg วิ่งบนรางโค้งรัศมี 500 m ด้วยความเร็ว 72 km/hr ต้องมีแรงเสียดทานเท่าใดจึงจะไม่ไถลออกนอกโค้ง (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 16,000 N
+\item 32,000 N
+\item 64,000 N
+\item 128,000 N
+\end{enumerate}
+\item \textbf{วัตถุมวล 3 kg ผูกเชือกยาว 1.2 m หมุนเป็นวงกลมในระนาบดิ่ง ที่จุดกึ่งกลาง (ระดับเดียวกับจุดหมุน) ด้วยความเร็ว 5 m/s แรงตึงเชือกเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 62.5 N
+\item 75 N
+\item 87.5 N
+\item 125 N
+\end{enumerate}
+\item \textbf{ใบพัดเครื่องบินหมุน 2,400 รอบต่อนาที ความถี่เป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 20 Hz
+\item 40 Hz
+\item 60 Hz
+\item 80 Hz
+\end{enumerate}
+\item \textbf{ลูกปืนมวล 0.02 kg ยิงเข้าแนวราบด้วยความเร็ว 400 m/s เข้าชนแผ่นไม้และออกด้วยความเร็ว 300 m/s ถ้าเส้นทางเป็นวงกลมรัศมี 0.5 m ภายในไม้ แรงสู่ศูนย์กลางเฉลี่ยเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 1,000 N
+\item 2,000 N
+\item 4,000 N
+\item 8,000 N
+\end{enumerate}
+\item \textbf{วัตถุเคลื่อนที่เป็นวงกลมด้วยความเร็วคงที่ 6 m/s รัศมี 3 m คาบเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item π s
+\item 2π s
+\item 3π s
+\item 0.5π s
+\end{enumerate}
+\item \textbf{ลูกตุ้มเปลือกหอยมวล 0.5 kg ผูกเชือกยาว 1 m แกว่งเป็นวงกลมในระนาบดิ่งด้วยความเร็วคงที่ 6 m/s ที่จุดต่ำสุดแรงตึงเชือกเป็นเท่าใด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 18 N
+\item 23 N
+\item 28 N
+\item 33 N
+\end{enumerate}
+\item \textbf{อิเล็กตรอนเคลื่อนที่เป็นวงกลมรัศมี 0.05 m ในสนามแม่เหล็กด้วยความเร็ว 2×10⁶ m/s มวลอิเล็กตรอน 9×10⁻³¹ kg แรงสู่ศูนย์กลางเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 7.2×10⁻²⁵ N
+\item 7.2×10⁻²³ N
+\item 7.2×10⁻²² N
+\item 7.2×10⁻²⁰ N
+\end{enumerate}
+\item \textbf{เข็มนาฬิกายาว 0.5 m ปลายเข็มมีความเร็ว 0.0017 m/s ความเร็วเชิงมุมเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 0.0017 rad/s
+\item 0.0034 rad/s
+\item 0.0085 rad/s
+\item 0.017 rad/s
+\end{enumerate}
+\item \textbf{เครื่องปั่นหมุนที่ 3,000 รอบต่อนาที ถ้าใบพัดมีรัศมี 0.1 m จงหาแรงสู่ศูนย์กลางที่ปลายใบพัด (มวลถือว่าเป็นจุด)}
+\begin{enumerate}[label=\alph*)]
+\item 10π² N
+\item 20π² N
+\item 100π² N
+\item 400π² N
+\end{enumerate}
+\item \textbf{วัตถุผูกเชือกยาว 0.5 m หมุนเป็นวงกลมในระนาบดิ่ง ที่จุดสูงสุดมีแรงตึงเชือกเป็น 2 เท่าของน้ำหนักวัตถุ ความเร็วที่จุดสูงสุดเป็นเท่าใด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 2.5 m/s
+\item 5.0 m/s
+\item 7.5 m/s
+\item 10.0 m/s
+\end{enumerate}
+\item \textbf{วัตถุเคลื่อนที่เป็นวงกลมด้วยความเร็วเชิงมุม 4 rad/s รัศมี 0.25 m คาบเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 0.25π s
+\item 0.5π s
+\item π s
+\item 2π s
+\end{enumerate}
+\item \textbf{รถยนต์เข้าโค้งรัศมี 80 m ด้วยความเร็ว 36 km/hr ถ้าแรงเสียดทานสถิตสูงสุด 5,000 N มวลรถยนต์ต้องไม่เกินเท่าใดจึงจะไม่ไถล (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 500 kg
+\item 1,000 kg
+\item 2,000 kg
+\item 4,000 kg
+\end{enumerate}
+\item \textbf{วัตถุมวล 1 kg ผูกเชือกยาว 2 m หมุนเป็นวงกลมในระนาบดิ่ง ที่จุดสูงสุดแรงตึงเชือก = 5 N จงหาความเร็วที่จุดสูงสุด (g = 10 m/s²)}
+\begin{enumerate}[label=\alph*)]
+\item 5.5 m/s
+\item 7.7 m/s
+\item 10.0 m/s
+\item 15.5 m/s
+\end{enumerate}
+\item \textbf{จานเสียง 78 รอบต่อนาที ความถี่เป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 0.78 Hz
+\item 1.3 Hz
+\item 1.56 Hz
+\item 2.6 Hz
+\end{enumerate}
+\item \textbf{วัตถุมวล 0.3 kg เคลื่อนที่เป็นวงกลมด้วยความเร็วเชิงมุม 10 rad/s รัศมี 0.5 m แรงสู่ศูนย์กลางเป็นเท่าใด}
+\begin{enumerate}[label=\alph*)]
+\item 5 N
+\item 10 N
+\item 15 N
+\item 20 N
+\end{enumerate}
+\end{enumerate}
+\end{document}
