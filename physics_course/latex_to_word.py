@@ -131,7 +131,7 @@ def convert_lesson_to_word(json_path, output_dir="/home/pi4eiei/tutoring-company
     
     # คำถาม - เริ่มนับ 1 ใหม่ทุกบท
     for i, q in enumerate(questions, 1):
-        add_question_with_image(doc, q, i, add_image=True)
+        add_question_with_image(doc, q, i, add_image=False)
     
     doc.save(docx_path)
     print(f"✅ สร้างเอกสาร: {docx_path}")
