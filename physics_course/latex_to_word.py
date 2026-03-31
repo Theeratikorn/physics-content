@@ -73,21 +73,20 @@ def create_physics_image(question_type, output_path):
                 facecolor='white', edgecolor='none')
     plt.close()
 
-def add_question_with_image(doc, question_data, add_image=False):
+def add_question_with_image(doc, question_data, q_num, add_image=False):
     """เพิ่มคำถามพร้อมรูป (ถ้าต้องการ)"""
     q_text = question_data.get('question', '')
     q_type = question_data.get('topic', '')
-    q_id = question_data.get('id', '')
     options = question_data.get('options', [])
     
-    # หัวข้อคำถาม
+    # หัวข้อคำถาม - เริ่มนับ 1 ใหม่
     p = doc.add_paragraph()
-    run = p.add_run(f"ข้อ {q_id}: {q_text}")
+    run = p.add_run(f"{q_num}. {q_text}")
     run.font.size = Pt(12)
     
     # เพิ่มรูป (ถ้ามีและต้องการ)
     if add_image and random.random() < 0.3:  # 30% ของข้อจะมีรูป
-        img_path = f"/tmp/physics_img_{q_id.replace(' ', '_').replace('p', 'q')}.png"
+        img_path = f"/tmp/physics_img_{q_num}.png"
         try:
             create_physics_image(q_type, img_path)
             if os.path.exists(img_path):
@@ -96,10 +95,10 @@ def add_question_with_image(doc, question_data, add_image=False):
         except:
             pass
     
-    # ตัวเลือก
+    # ตัวเลือก - เปลี่ยนจาก A B C D เป็น 1 2 3 4
     if options:
-        for opt in options:
-            p = doc.add_paragraph(f"    {opt}", style='List Bullet')
+        for i, opt in enumerate(options, 1):
+            p = doc.add_paragraph(f"    {i}. {opt}")
             p.paragraph_format.left_indent = Inches(0.5)
     
     doc.add_paragraph()  # บรรทัดว่าง
@@ -130,9 +129,9 @@ def convert_lesson_to_word(json_path, output_dir="/home/pi4eiei/tutoring-company
     doc.add_paragraph(f"บทที่ {lesson_name}")
     doc.add_paragraph()
     
-    # คำถาม
+    # คำถาม - เริ่มนับ 1 ใหม่ทุกบท
     for i, q in enumerate(questions, 1):
-        add_question_with_image(doc, q, add_image=True)
+        add_question_with_image(doc, q, i, add_image=True)
     
     doc.save(docx_path)
     print(f"✅ สร้างเอกสาร: {docx_path}")
@@ -143,13 +142,18 @@ def convert_lesson_to_word(json_path, output_dir="/home/pi4eiei/tutoring-company
     doc_ans.add_heading(f"เฉลย {lesson_title}", 0)
     doc_ans.add_paragraph()
     
-    for q in questions:
-        q_id = q.get('id', '')
+    for i, q in enumerate(questions, 1):
         answer = q.get('answer', '')
         solution = q.get('solution', '')
         
+        # แปลงตัวอักษรเป็นตัวเลข
+        if isinstance(answer, str) and len(answer) == 1:
+            # A=1, B=2, C=3, D=4
+            if answer.upper() in 'ABCD':
+                answer = str(ord(answer.upper()) - ord('A') + 1)
+        
         p = doc_ans.add_paragraph()
-        run = p.add_run(f"ข้อ {q_id}: ")
+        run = p.add_run(f"ข้อ {i}: ")
         run.bold = True
         run.font.size = Pt(12)
         run2 = p.add_run(f"คำตอบ: {answer}")
