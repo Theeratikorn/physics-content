@@ -48,6 +48,11 @@ def convert_to_word(json_path, output_dir=".", create_answer=True):
         
         # ตัวเลือก 1-4
         options = q.get('options') or []
+        
+        # ถ้าเป็น dict (format ไทย: ก, ข, ค, ง) ให้แปลงเป็น list
+        if isinstance(options, dict):
+            options = list(options.values())
+        
         for j, opt in enumerate(options, 1):
             p = doc.add_paragraph(f"    {j}. {opt}")
             p.paragraph_format.left_indent = Inches(0.5)
